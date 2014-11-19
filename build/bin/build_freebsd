@@ -47,7 +47,8 @@ if [ "x${LOCAL_TOOL_DIRS}" != "x" ]; then
 fi
 
 # Create a make.conf
-echo "MALLOC_PRODUCTION=" > ${X_DESTDIR}/../make.conf.${BUILDNAME}
+echo > ${X_DESTDIR}/../make.conf.${BUILDNAME}
+#echo "MALLOC_PRODUCTION=" > ${X_DESTDIR}/../make.conf.${BUILDNAME}
 
 # Make a src.conf
 echo 'WITHOUT_KERBEROS="YES"' > ${X_DESTDIR}/../src.conf.${BUILDNAME}
