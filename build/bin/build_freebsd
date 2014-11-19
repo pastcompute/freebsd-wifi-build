@@ -63,6 +63,15 @@ echo 'WITHOUT_CASPER="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
 echo 'WITHOUT_CAPSICUM="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
 echo 'WITHOUT_TESTS="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
 
+echo 'WITHOUT_GAMES="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
+echo 'WITHOUT_DOCS="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
+echo 'WITHOUT_MAN="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
+echo 'WITHOUT_INFO="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
+echo 'WITHOUT_LOCALES="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
+echo 'WITHOUT_NLS="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
+echo 'WITHOUT_EXAMPLES="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
+echo 'WITHOUT_ZFS="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
+echo 'WITHOUT_RCS="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
 echo 'WITH_INSTALL_AS_USER="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
 
 while [ "x$1" != "x" ]; do
