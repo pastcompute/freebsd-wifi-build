@@ -72,6 +72,27 @@ echo 'WITHOUT_NLS="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
 echo 'WITHOUT_EXAMPLES="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
 echo 'WITHOUT_ZFS="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
 echo 'WITHOUT_RCS="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
+
+# All this stuff just reduces compile time, anyway.
+# Because we choose what to copy into staging
+
+#echo 'WITHOUT_CDDL="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
+#echo 'WITHOUT_ACPI="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
+#echo 'WITHOUT_RESCUE="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
+#echo 'WITHOUT_PROFILE="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
+#echo 'WITHOUT_APM="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
+#echo 'WITHOUT_FLOPPY="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
+#echo 'WITHOUT_FREEBSD_UPDATE="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
+#echo 'WITHOUT_SENDMAIL="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
+#echo 'WITHOUT_MAIL="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
+#echo 'WITHOUT_RCMDS="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
+#echo 'WITHOUT_RESCUE="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
+#echo 'WITHOUT_SVNLITE="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
+#echo 'WITHOUT_SYSINSTALL="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
+#echo 'WITHOUT_TCSH="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
+#echo 'WITHOUT_PC_SYSINSTALL="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
+#
+#echo 'WITH_SSP="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
 echo 'WITH_INSTALL_AS_USER="YES"' >> ${X_DESTDIR}/../src.conf.${BUILDNAME}
 
 while [ "x$1" != "x" ]; do
