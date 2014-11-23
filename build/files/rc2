@@ -39,6 +39,7 @@ echo "*** Starting networking via /etc/rc.d/base/net"
 /etc/rc.d/base/net start
 
 echo "*** Default password/login databases .."
+chown 0 /etc/login.conf
 /usr/sbin/pwd_mkdb /etc/master.passwd
 /usr/bin/cap_mkdb /etc/login.conf
 
